@@ -3,12 +3,11 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 
-import './index.css'
+import './index.scss'
 
 const Header = () => (
   <div
     style={{
-      background: 'rebeccapurple',
       marginBottom: '1.45rem',
     }}
   >
@@ -19,17 +18,23 @@ const Header = () => (
         padding: '1.45rem 1.0875rem',
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          Gatsby
-        </Link>
-      </h1>
+      <Link
+        to="/"
+        style={{
+          textDecoration: 'none'
+        }}
+      >
+        <h1 style={{
+              color: '#e1008f',
+              fontSize: "70px",
+              fontWeight: "900",
+              margin: 0
+            }}>
+            Mayo
+        </h1>
+
+        <p style={{ margin: 0 }}>Synco de mayo</p>
+      </Link>
     </div>
   </div>
 )
