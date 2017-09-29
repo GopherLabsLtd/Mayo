@@ -16,7 +16,7 @@ Ad hoc network layers are common in Android apps. They're bad for a few reasons:
 - Makes it hard to maintain existing apps ("oh my god, this mess...")
 - Makes it hard to write unit tests ("how do I do this again?")
 
-So the basic idea of Moya is that we want some network abstraction layer that
+So the basic idea of Mayo is that we want some network abstraction layer that
 sufficiently encapsulates actually calling okHttp directly. It should be simple
 enough that common things are easy, but comprehensive enough that complicated things
 are also easy.
