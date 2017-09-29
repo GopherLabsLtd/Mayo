@@ -8,6 +8,8 @@ You probably use [okHttp](http://square.github.io/okhttp/) to abstract away acce
 But then, like lots of smart developers, you write ad hoc network abstraction layers. They
 are probably called "APIManager" or "NetworkModel", and they always end in tears.
 
+___
+
 Ad hoc network layers are common in Android apps. They're bad for a few reasons:
 
 - Makes it hard to write new apps ("where do I begin?")
@@ -22,8 +24,7 @@ are also easy.
 > If you use okHttp to abstract away `HttpUrlConnection`, why not use something
 to abstract away the nitty gritty of URLs, parameters, etc?
 
-Some awesome features of Mayo:
-
+**Some awesome features of Mayo:**
 - Compile-time checking for correct API endpoint accesses.
 - Lets you define a clear usage of different endpoints with associated sealed class values.
 - Treats test stubs as first-class citizens so unit testing is super-easy.
