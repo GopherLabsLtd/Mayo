@@ -1,8 +1,11 @@
 # Mayo
 
-You're a smart developer. You probably use [okHttp](http://square.github.io/okhttp/) to abstract away access to
-`HttpUrlConnection` and all those nasty details you don't really care about. But then,
-like lots of smart developers, you write ad hoc network abstraction layers. They
+You're a smart developer!
+
+You probably use [okHttp](http://square.github.io/okhttp/) to abstract away access to
+`HttpUrlConnection` and all those nasty details you don't really care about.
+
+But then, like lots of smart developers, you write ad hoc network abstraction layers. They
 are probably called "APIManager" or "NetworkModel", and they always end in tears.
 
 Ad hoc network layers are common in Android apps. They're bad for a few reasons:
