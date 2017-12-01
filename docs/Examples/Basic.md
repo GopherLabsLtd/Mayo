@@ -49,16 +49,13 @@ You can see that the `TargetType` interface makes sure that each value of the en
 Note that at this point you have added enough information for a basic API networking layer to work. By default Mayo will combine all the given parts into a full request:
 
 ```kotlin
-val provider = MayoProvider<GitHubApi>()
-val type = object : TypeToken<Array<GitHubRepository>>() {}.type
-provider.request(GitHubApi.userRespository(username), type, object : HttpCallback<Array<GitHubRepository>> {
+   GithubProvider.request(GitHubApi.zen(), object : Callback {
+            override fun onFailure(call: Call?, exception: IOException?) {
+                view.displayError(exception.toString())
+            }
 
-    override fun onFailure(call: Call?, exception: Exception?) {
-        // Handle Failure.
-    }
-
-    override fun onSuccess(call: Call?, response: Array<GitHubRepository>?) {
-        // Handle successful response.
-    }
-})
+            override fun onResponse(call: Call?, response: Response?) {
+                view.displayToast(response?.body()?.string() ?: "")
+            }
+        })
 ```
