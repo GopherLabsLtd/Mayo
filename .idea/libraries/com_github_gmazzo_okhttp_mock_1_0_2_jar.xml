@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="com.github.gmazzo:okhttp-mock:1.0.2@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.gmazzo/okhttp-mock/1.0.2/db45316a298cc84c95fd3ca23ebe95bef0184db2/okhttp-mock-1.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.gmazzo/okhttp-mock/1.0.2/673bf9fa35e97de9375805c28c9f904426900a74/okhttp-mock-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
