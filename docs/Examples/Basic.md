@@ -51,11 +51,11 @@ Note that at this point you have added enough information for a basic API networ
 ```kotlin
    GithubProvider.request(GitHubApi.zen(), object : Callback {
             override fun onFailure(call: Call?, exception: IOException?) {
-                view.displayError(exception.toString())
+                // Handle failed Response.
             }
 
             override fun onResponse(call: Call?, response: Response?) {
-                view.displayToast(response?.body()?.string() ?: "")
+                // Handle successful response. 
             }
         })
 ```
