@@ -1,0 +1,4 @@
+include ':app'
+include 'mayo'
+project(':mayo').projectDir = new File
+        ('../Mayo/mayo')
