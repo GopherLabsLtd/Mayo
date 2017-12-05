@@ -39,7 +39,23 @@ This project is actively under development. A release will come shortly!
 
 ## Installation
 
-Coming Soon
+In your project level ```build.gradle``` add the following:
+
+```kotlin 
+allprojects {
+ repositories {
+    jcenter()
+    maven { url "https://jitpack.io" }
+ }
+}
+````
+
+In your module's ```build.gradle``` add the following:
+```kotlin
+dependencies {
+    compile 'com.github.gopherlabsltd:mayo:1.0.1'
+}
+````
 
 ## Usage
 
