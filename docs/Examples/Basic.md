@@ -34,7 +34,13 @@ sealed class GitHubApi : TargetType {
         get() = Method.GET
 
     override val sampleData: Data
-        get() = JSONObject()
+        get() = when (this) {
+            is zen -> ResponseBody.create(MediaType.parse("text/plain"), "Non-blocking is better than blocking.")
+            is userProfile -> ResponseBody.create(MediaType.parse("application/json; charset=utf-8"), "{\"login\": " +
+                    "\"$name\", \"id\": 100}")
+            is userRespository -> ResponseBody.create(MediaType.parse("application/json; charset=utf-8"),
+                    "[{\"name\": \"Repo Name\"}]")
+        }
 
     override val task: Task
         get() = Task.requestPlain()
