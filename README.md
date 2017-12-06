@@ -1,4 +1,5 @@
 # Mayo
+[![pipeline status](https://gitlab.cas.mcmaster.ca/nguyenbh/3XA3-CIA-Mayo/badges/master/pipeline.svg)](https://gitlab.cas.mcmaster.ca/nguyenbh/3XA3-CIA-Mayo/commits/master)
 
 You're a smart developer!
 
